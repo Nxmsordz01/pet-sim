@@ -1,0 +1,15 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("[✨SHINY] Pet Simulator X! 🐾 Trade Scam", "Midnight")
+--MAIN
+local Main = Window:NewTab("Trade scam")
+local MainSection = Main:NewSection("Scamer")
+
+
+MainSection:NewToggle("Trade Scam", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
